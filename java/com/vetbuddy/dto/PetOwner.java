@@ -1,7 +1,7 @@
 package com.vetbuddy.dto;
 
-public class Farmer {
-	Integer fid;
+public class PetOwner {
+	Integer oid;
 	String name;
 	String email;
 	String password;
@@ -17,10 +17,10 @@ public class Farmer {
 	public void setMobile(Long mobile) {
 		this.mobile = mobile;
 	}
-	public Farmer() {
+	public PetOwner() {
 
 	}
-	public Farmer(String name, String email, String password, String address, Integer postal_code,
+	public PetOwner(String name, String email, String password, String address, Integer postal_code,
 			String village, String district ,Long mobile) {
 		super();
 
@@ -35,11 +35,12 @@ public class Farmer {
 	}
 
 
-	public Integer getFid() {
-		return fid;
+	
+	public Integer getOid() {
+		return oid;
 	}
-	public void setFid(Integer fid) {
-		this.fid = fid;
+	public void setOid(Integer oid) {
+		this.oid = oid;
 	}
 	public String getName() {
 		return name;
@@ -87,7 +88,7 @@ public class Farmer {
 
 	@Override
 	public String toString() {
-		return "Farmer [fid=" + fid + ", name=" + name + ", email=" + email + ", password=" + password + ", address="
+		return "Farmer [fid=" + oid + ", name=" + name + ", email=" + email + ", password=" + password + ", address="
 				+ address + ", Postal_code=" + Postal_code + ", village=" + village + ", district=" + district + "]";
 	}
 
